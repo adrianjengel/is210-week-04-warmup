@@ -6,3 +6,8 @@ EXPENSE = 14.23
 LOOKS_NICE = True
 MAX_EXPENSE = 12
 GET_OUT_ALIVE = False
+
+if (LOOKS_NICE is True and EXPENSE <= MAX_EXPENSE) or GET_OUT_ALIVE is False:
+    SACRIFICE = True
+else:
+    SACRIFICE = False
