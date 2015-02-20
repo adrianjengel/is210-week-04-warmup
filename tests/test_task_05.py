@@ -20,11 +20,11 @@ class Lesson04Task05TestCase(unittest.TestCase):
 
         This test will try random numbers in each of the target ranges.
         """
-        levels = {'low': [-256, 89],
-                  'ideal': [90, 119],
-                  'warning': [120, 139],
-                  'high': [140, 159],
-                  'emergency': [160, 256]
+        levels = {'Low': [-256, 89],
+                  'Ideal': [90, 119],
+                  'Warning': [120, 139],
+                  'High': [140, 159],
+                  'Emergency': [160, 256]
         }
 
         for key, value in levels.iteritems():

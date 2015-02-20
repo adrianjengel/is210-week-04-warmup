@@ -6,19 +6,20 @@
 BP_INPUT = int(raw_input('What is your blood pressure? '))
 
 if BP_INPUT <= 89:
-    BP_INPUT = 'Low'
+    BP_STATUS = 'Low'
 
 elif BP_INPUT >= 90 and BP_INPUT <= 119:
-    BP_INPUT = 'Ideal'
+    BP_STATUS = 'Ideal'
 
 elif BP_INPUT >= 120 and BP_INPUT <= 139:
-    BP_INPUT = 'Warning'
+    BP_STATUS = 'Warning'
 
 elif BP_INPUT >= 140 and BP_INPUT <= 159:
-    BP_INPUT = 'High'
+    BP_STATUS = 'High'
 
-else: BP_INPUT = 'Emergency'
+else:
+    BP_STATUS = 'Emergency'
 
-BP_STATUS = 'The level of your status is currently: {}'.format(BP_INPUT)
+RESULT = 'The level of your status is currently: {}'.format(BP_STATUS)
 
-print BP_STATUS
+print RESULT
